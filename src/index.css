@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0b0f17;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-terminal {
+  font-family: "Courier New", "Courier Prime", "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+}
+
+.font-code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+}
+
+/* Apple OS terminal glow and cursor effect */
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.15em;
+  background-color: #10b981;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Subtle scanline overlay for retro CRT/terminal toggle */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Custom forensic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d121d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

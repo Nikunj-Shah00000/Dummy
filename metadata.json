@@ -1,0 +1,7 @@
+{
+  "name": "Indigenous Digital Forensics Framework",
+  "description": "AI-Powered Indigenous Digital Forensics Framework featuring multi-source ingest, cryptographic correlation, integrity checks, and explainable court-admissible forensic insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
